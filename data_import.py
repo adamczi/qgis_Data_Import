@@ -249,7 +249,7 @@ class DataImport:
 
     def openFile(self, path):
         """ Load file to QGIS """
-        layer = self.iface.addVectorLayer(path+'.shp', self.dlg.comboBox.currentText(), "ogr")
+        layer = self.iface.addVectorLayer(path, self.dlg.comboBox.currentText(), "ogr")
         if not layer:
           print "Layer failed to load!"
 
